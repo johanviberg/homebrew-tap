@@ -5,21 +5,21 @@
 class Zd < Formula
   desc "AI agent-friendly CLI for Zendesk"
   homepage "https://github.com/johanviberg/zd"
-  version "0.4.5"
+  version "0.4.6"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/johanviberg/zd/releases/download/v0.4.5/zd_0.4.5_darwin_amd64.tar.gz"
-      sha256 "4bef672eca84a906e463f2a71805ed8e8be03ac8d2033238d24173ae333b9205"
+      url "https://github.com/johanviberg/zd/releases/download/v0.4.6/zd_0.4.6_darwin_amd64.tar.gz"
+      sha256 "c3fb6bdfb48f3d73070aa25e200548021dc18bc63530f6b14a5d245b2a9b5049"
 
       define_method(:install) do
         bin.install "zd"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/johanviberg/zd/releases/download/v0.4.5/zd_0.4.5_darwin_arm64.tar.gz"
-      sha256 "b1e1ef162ce48255802ff9df69aca4dcdb82fa0f5cabef6317593f886c53cefd"
+      url "https://github.com/johanviberg/zd/releases/download/v0.4.6/zd_0.4.6_darwin_arm64.tar.gz"
+      sha256 "85641538a77a452baf40189541d47a1bdba71e51d84dd0b62878690d479e8f70"
 
       define_method(:install) do
         bin.install "zd"
@@ -29,15 +29,15 @@ class Zd < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/johanviberg/zd/releases/download/v0.4.5/zd_0.4.5_linux_amd64.tar.gz"
-      sha256 "2d658bc9067b79ae0a68ff9aba28f21885e144a12b0947376d27bde3bbd6d819"
+      url "https://github.com/johanviberg/zd/releases/download/v0.4.6/zd_0.4.6_linux_amd64.tar.gz"
+      sha256 "a303fab0256861701cfe529a5aebc842d9d2d19c7ddf8d83f407b1245225f6b1"
       define_method(:install) do
         bin.install "zd"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/johanviberg/zd/releases/download/v0.4.5/zd_0.4.5_linux_arm64.tar.gz"
-      sha256 "047c198fd9c994b08d991727f1208c01d81f93de58d507225a0907349109a0ac"
+      url "https://github.com/johanviberg/zd/releases/download/v0.4.6/zd_0.4.6_linux_arm64.tar.gz"
+      sha256 "d6be133b86541f3ead0386695a86c5766d059ff860e0ae6d30c36783117ee9d9"
       define_method(:install) do
         bin.install "zd"
       end
