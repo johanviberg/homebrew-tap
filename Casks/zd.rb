@@ -3,7 +3,7 @@ cask "zd" do
   name "zd"
   desc "AI agent-friendly CLI for Zendesk"
   homepage "https://github.com/johanviberg/zd"
-  version "0.4.8"
+  version "0.4.9"
 
   livecheck do
     skip "Auto-generated on release."
@@ -18,22 +18,22 @@ cask "zd" do
   on_macos do
     on_intel do
       url "https://github.com/johanviberg/zd/releases/download/v#{version}/zd_#{version}_macOS_x86_64.tar.gz"
-      sha256 "229b98f93362fae5d43fc0f70f3dd5abff724cb006cac540db1bc5c33979b024"
+      sha256 "2d231b86e6f29adb2f86c5cc6bd8f9bb40c3bb8cc70615a12ef0da2857b90ee5"
     end
     on_arm do
       url "https://github.com/johanviberg/zd/releases/download/v#{version}/zd_#{version}_macOS_arm64.tar.gz"
-      sha256 "7fe1a5de58819f1ecfe9f4af5b2a411d33c3f6bfd0e4c7ff87ad4f49c3af0b89"
+      sha256 "155af5996233ab82501397383435085701b960186612dc2cd50b625d7b5f1f88"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/johanviberg/zd/releases/download/v#{version}/zd_#{version}_linux_x86_64.tar.gz"
-      sha256 "a15ec0808678756d6cd2e44be09799f80677683e1feeb10639d6e39784a3880c"
+      sha256 "3f4c385d674232a1f47515d28218bb7f459b224328f0e91508ba72ba4bef3575"
     end
     on_arm do
       url "https://github.com/johanviberg/zd/releases/download/v#{version}/zd_#{version}_linux_arm64.tar.gz"
-      sha256 "e24cd40642b2fa9ed08411ee63ae5a699c5861b26ec326f487686daba2ebaf83"
+      sha256 "8d803c09801daca1c40310d68c671d3cb7f55551a0ee9446cd0e9b28888d0c2e"
     end
   end
 
