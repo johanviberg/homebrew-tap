@@ -18,22 +18,22 @@ cask "zd" do
   on_macos do
     on_intel do
       url "https://github.com/johanviberg/zd/releases/download/v#{version}/zd_#{version}_macOS_x86_64.tar.gz"
-      sha256 "20f4fd5e6dd4624bc0b8098ef31bd00ddb1f333d77994a38d7d63730d973057b"
+      sha256 "229b98f93362fae5d43fc0f70f3dd5abff724cb006cac540db1bc5c33979b024"
     end
     on_arm do
       url "https://github.com/johanviberg/zd/releases/download/v#{version}/zd_#{version}_macOS_arm64.tar.gz"
-      sha256 "9f67edfb653645fb23356eff8f027e351c7f9e830e2837e46e7c8e6afbadc31c"
+      sha256 "7fe1a5de58819f1ecfe9f4af5b2a411d33c3f6bfd0e4c7ff87ad4f49c3af0b89"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/johanviberg/zd/releases/download/v#{version}/zd_#{version}_linux_x86_64.tar.gz"
-      sha256 "0779bcddaecf1997e0b2e2c9cf57ff0583da122e51ff677c4cf5844f97097878"
+      sha256 "a15ec0808678756d6cd2e44be09799f80677683e1feeb10639d6e39784a3880c"
     end
     on_arm do
       url "https://github.com/johanviberg/zd/releases/download/v#{version}/zd_#{version}_linux_arm64.tar.gz"
-      sha256 "59983ee06a2f3c0efbfca88fc295da32b31a5b974f5d6d837fb56902943f0544"
+      sha256 "e24cd40642b2fa9ed08411ee63ae5a699c5861b26ec326f487686daba2ebaf83"
     end
   end
 
