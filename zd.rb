@@ -5,13 +5,13 @@
 class Zd < Formula
   desc "AI agent-friendly CLI for Zendesk"
   homepage "https://github.com/johanviberg/zd"
-  version "0.4.15"
+  version "0.4.16"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/johanviberg/zd/releases/download/v0.4.15/zd_0.4.15_macOS_x86_64.tar.gz"
-      sha256 "e5fa912d9999277401fa12cd35925d7ab10c147fdd76ca6e05d4f8f98d36c52f"
+      url "https://github.com/johanviberg/zd/releases/download/v0.4.16/zd_0.4.16_macOS_x86_64.tar.gz"
+      sha256 "59b76966c7eb63df44199741ec6435e9f78a02734a9bde28b7cf0fedde4672da"
 
       define_method(:install) do
         bin.install "zd"
@@ -22,8 +22,8 @@ class Zd < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/johanviberg/zd/releases/download/v0.4.15/zd_0.4.15_macOS_arm64.tar.gz"
-      sha256 "165f3725cf503d86dae0587a893fad2ad66d4cefb790c0037865f33a242990e5"
+      url "https://github.com/johanviberg/zd/releases/download/v0.4.16/zd_0.4.16_macOS_arm64.tar.gz"
+      sha256 "edbccc75286eab6243bad4bc319b44245a1546e9eeb881afcda6148bc7189a7e"
 
       define_method(:install) do
         bin.install "zd"
@@ -37,8 +37,8 @@ class Zd < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/johanviberg/zd/releases/download/v0.4.15/zd_0.4.15_linux_x86_64.tar.gz"
-      sha256 "beefd8be6c13b69064a7db0dd6f181917cba908af361d18dfe0d921265e0048e"
+      url "https://github.com/johanviberg/zd/releases/download/v0.4.16/zd_0.4.16_linux_x86_64.tar.gz"
+      sha256 "4a48f7afe6b4c056586b26354758209b978ab725aad152ca29be5e64bb51c8fb"
       define_method(:install) do
         bin.install "zd"
         bash_completion.install "completions/zd.bash" => "zd"
@@ -48,8 +48,8 @@ class Zd < Formula
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/johanviberg/zd/releases/download/v0.4.15/zd_0.4.15_linux_arm64.tar.gz"
-      sha256 "4ef0df37f82bed30b39ef2cbc9e6c65cd1ffbf8bf8ee9e2fbc78778eddeea763"
+      url "https://github.com/johanviberg/zd/releases/download/v0.4.16/zd_0.4.16_linux_arm64.tar.gz"
+      sha256 "deef8cef018e5911ea716aa5748085647eb0e021b870e647a1525f7589cc9602"
       define_method(:install) do
         bin.install "zd"
         bash_completion.install "completions/zd.bash" => "zd"
